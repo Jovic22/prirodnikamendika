@@ -1,0 +1,608 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+
+body{
+  background-image: url(images/abs.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+footer{
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 100px 0 30px;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  font-size: 13px;
+  line-height: 20px;
+ 
+}
+
+
+.red {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.red h3{
+  font-family: 'Poppins';
+}
+
+.red p{
+  font-family: 'Poppins';
+}
+
+.red h4{
+  font-family: 'Poppins';
+}
+
+.kolona ul li a{
+  font-family: 'Poppins';
+}
+
+.socijalneikon i{
+  line-height: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+  padding: 30px 25px;
+  margin: 10px;
+  
+}
+
+.socijalneikon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+}
+ 
+.ikoninsta{
+  background-image: url(images/ikoninsta.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ikonfacebook{
+  background-image: url(images/ikonfacebook.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ikontel{
+  background-image: url(images/ikontel.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ikonlokacija{
+  background-image: url(images/ikonlokacija.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.kolona{
+  flex-basis: 20%;
+  padding: 10px;
+}
+
+.kolona1{
+  flex-basis: 20%;
+  padding: 10px;
+}
+
+.kolona1 h3{
+  margin: 0px auto 0px;
+}
+
+
+
+.logofuter {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.kolona h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.kolona1 h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+
+.emailfuter {
+  width: fit-content;
+  border-bottom: 1px solid white;
+  margin: 20px 0;
+}
+
+.kolona  ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.kolona  ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.header {
+  min-height: 100vh;
+  width: 100%; 
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.videopozadina {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  display: block;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .videopozadina {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    display: block;
+  }
+}
+
+@media (max-aspect-ratio: 16/9){
+  .videopozadina {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+}
+
+
+
+
+
+nav{
+  display: flex;
+  padding: 1% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+
+}
+
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Poppins';
+}
+
+.nav-links ul li a:hover{
+  color: rgb(255, 196, 0);
+  
+}
+
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background:  rgb(255, 196, 0);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.text-kutija{
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-kutija p{
+  font-family: 'Poppins';
+}
+
+.text-kutija a{
+  font-family: 'Poppins';
+}
+
+.text-kutija1{
+  top: 50%;
+
+}
+
+.text-kutija h1 {
+  font-size: 70px;
+
+}
+.text-kutija p {
+  margin: 10px 0 40px;
+  font-size: 17px;
+  color: #fff;
+}
+
+.pocetni-btn{
+  width: 150px;
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.7);
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.pocetni-btn:hover{
+  background: rgb(255, 196, 0);
+  transition: 1s;
+  scale: 1.1;
+  color: black;
+}
+
+
+
+.butonigalerija{
+  width: 100%;
+}
+
+.butonigalerija a{
+  font-family: 'Poppins';
+}
+
+
+nav .fa {
+  display: none;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width: 760px){
+  nav {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  }
+  footer{
+    bottom: unset;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0 30px;
+  }
+
+  footer h3 {
+    margin: 0px auto 0px;
+    font-size: 22px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+
+  .kolona ul li a {
+    font-size: 15px;
+
+  }
+
+  .socijalneikon i {
+    padding: 25px 20px;
+  }
+
+  .emailfuter {
+    margin: 5px auto 5px;
+  }
+
+  
+  .kolona{
+    flex-basis: 100%;
+  }
+
+  .kolona1{
+    flex-basis: 100%;
+  }
+
+
+  
+  .text-kutija h1{
+    font-size: 34px;
+  }
+
+  .text-kutija p {
+    
+    font-size: 15px;
+    
+  }
+
+  
+
+  nav img {
+    margin-top: 15px;
+  }
+  
+  .hamburger{
+    display: block;
+    z-index: 6;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 5;
+  }
+
+  .ulinkovi{
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+  }
+
+  .nav-links ul li a{
+    font-size: 22px;
+  }
+
+  .nav-links.active{
+    left: 0;
+  }
+  
+  .nav-links ul li {
+    padding: 35px 0;
+    top: 50px;
+  }
+
+  .nav-links ul li a:hover{
+    color: rgb(255, 196, 0);
+    transition: 0.5s;
+  
+  }
+
+  .nav-links ul li:hover::after{
+    width: 0%;
+  }
+
+}
+
+.naslovgalerije1 p {
+  font-family: 'Poppins';
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  color: white;
+}
+
+.naslovgalerije1{
+  display: block;
+  width: 90%;
+  text-align: center;
+  background-image: url(images/zid.png);
+  border-radius: 50px;
+  margin: 40px auto 0px;
+}
+
+.naslovgalerije1 h1{
+  background-image: linear-gradient(to right, #ffbe31, #E9C156);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+.linija1 {
+  display: block;
+  height: 2px;
+  background-image: linear-gradient(to right, #E1AB39, #E9C156);
+  width: 100%;
+  margin: 0 auto 0;
+}
+
+ .img-galerija {
+  width: 90%;
+  margin: 0px auto 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap:30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+@media screen and (max-width:700px){
+  .img-galerija {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
+.img-galerija img{
+  max-width: 100%;
+}
+
+
+
+
+.img-galerija img:hover{
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(4,9,30,0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.full-img img{
+  width: 90%;
+  max-width: 700px;
+}
+
+.full-img span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid white;
+  margin: 20px auto;
+}
+.copyright {
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+.ispodlinija {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+
+}
+
+.ispodlinija span {
+  width: 15px;
+  height: 100%;
+  background: white;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+.ispodlinija1 {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+
+}
+
+.ispodlinija1 span {
+  width: 15px;
+  height: 100%;
+  background: white;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+  0%{
+    left: -20px;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
+
